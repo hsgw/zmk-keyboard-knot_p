@@ -26,4 +26,26 @@
     };
 };
 
+&xiao_i2c {
+    status="okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
 
+    glidepoint0: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        status = "okay";
+        reg=<0x2a>;
+        dr-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "2x";
+        rotate-90;
+        y-invert;
+        sleep;
+    };
+};
+
+/ {
+    glidepoint_listener: glidepoint_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&glidepoint0>;
+    };
+};

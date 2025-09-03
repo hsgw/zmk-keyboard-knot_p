@@ -9,4 +9,10 @@ if SHIELD_KNOT_P
     config ZMK_POINTING
         default y
 
+    config I2C
+        default y
+    
+    config INPUT_PINNACLE
+        default y
+
 endif
