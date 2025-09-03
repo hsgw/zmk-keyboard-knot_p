@@ -1,0 +1,9 @@
+file_format: "1"
+id: knot_p
+name: knot_p
+type: shield
+url: https://github.com/hsgw/zmk-keyboard-knot_p/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+  - pointer

@@ -1,3 +1,4 @@
+name: knot_p
 build:
   settings:
     board_root: .
