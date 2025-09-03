@@ -5,5 +5,8 @@ if SHIELD_KNOT_P
 
     config INPUT
         default y
+    
+    config ZMK_POINTING
+        default y
 
 endif
