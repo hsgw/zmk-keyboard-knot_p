@@ -8,11 +8,20 @@ if SHIELD_KNOT_P
     
     config ZMK_POINTING
         default y
+    
+    config ZMK_MOUSE
+        default y
 
     config I2C
         default y
     
     config INPUT_PINNACLE
         default y
+
+    config MAIN_STACK_SIZE
+        default 4096
+    
+    config INPUT_THREAD_STACK_SIZE
+        default 4096
 
 endif

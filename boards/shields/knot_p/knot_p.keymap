@@ -17,7 +17,12 @@
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &mkp MB1 &mkp MB3 &mkp MB2
+        &mkp MB1 &mo 1 &mkp MB2
+      >;
+    };
+    1 {
+      bindings = <
+        &mkp MB3 &trans &mkp MB4 
       >;
     };
   };
