@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: halfdane
       url-base: https://github.com/halfdane/
+    - name: hsgw
+      url-base: https://github.com/hsgw/
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -18,7 +20,7 @@ manifest:
       remote: halfdane
       revision: main
     - name: cirque-input-module
-      remote: halfdane
-      revision: absolute_mode
+      remote: hsgw
+      revision: main
   self:
     path: config
